@@ -1,7 +1,7 @@
 <?php
-namespace Goavega\LaravelAzureServicebus\Support;
+namespace Ju4nr3v0l\LaravelAzureServicebus\Support;
 
-use Goavega\LaravelAzureServicebus\AzureConnector;
+use Ju4nr3v0l\LaravelAzureServicebus\AzureConnector;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {

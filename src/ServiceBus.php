@@ -1,18 +1,18 @@
 <?php
-namespace Goavega\LaravelAzureServicebus;
+namespace Ju4nr3v0l\LaravelAzureServicebus;
 
 use Illuminate\Contracts\Queue\Queue as QueueContract;
 use Illuminate\Queue\Queue;
-use AzureServiceBus\ServiceBus\Internal\IServiceBus;
-use AzureServiceBus\ServiceBus\Models\BrokeredMessage;
-use AzureServiceBus\ServiceBus\Models\ReceiveMessageOptions;
+use WindowsAzure\ServiceBus\Internal\IServiceBus;
+use WindowsAzure\ServiceBus\Models\BrokeredMessage;
+use WindowsAzure\ServiceBus\Models\ReceiveMessageOptions;
 
 abstract class ServiceBus extends Queue implements QueueContract
 {
     /**
      * The Azure IServiceBus instance.
      *
-     * @var \AzureServiceBus\ServiceBus\Internal\IServiceBus
+     * @var \WindowsAzure\ServiceBus\Internal\IServiceBus
      */
     protected $azure;
 
@@ -33,10 +33,10 @@ abstract class ServiceBus extends Queue implements QueueContract
     /**
      * Create a new Azure IQueue queue instance.
      *
-     * @param \AzureServiceBus\ServiceBus\Internal\IServiceBus $azure
+     * @param \WindowsAzure\ServiceBus\Internal\IServiceBus $azure
      * @param string                                        $default
      *
-     * @return \Goavega\LaravelAzureServicebusTopic\AzureQueue
+     * @return \Ju4nr3v0l\LaravelAzureServicebusTopic\AzureQueue
      */
     public function __construct(IServiceBus $azure, $default)
     {
@@ -143,7 +143,7 @@ abstract class ServiceBus extends Queue implements QueueContract
     /**
      * Get the underlying Azure IQueue instance.
      *
-     * @return \AzureServiceBus\Queue\Internal\IQueue
+     * @return \WindowsAzure\Queue\Internal\IQueue
      */
     public function getAzure()
     {

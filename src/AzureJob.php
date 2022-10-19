@@ -1,25 +1,25 @@
 <?php
-namespace Goavega\LaravelAzureServicebus;
+namespace Ju4nr3v0l\LaravelAzureServicebus;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Queue\Job as JobContract;
 use Illuminate\Queue\Jobs\Job;
-use AzureServiceBus\ServiceBus\Internal\IServiceBus;
-use AzureServiceBus\ServiceBus\Models\BrokeredMessage;
+use WindowsAzure\ServiceBus\Internal\IServiceBus;
+use WindowsAzure\ServiceBus\Models\BrokeredMessage;
 
 class AzureJob extends Job implements JobContract
 {
     /**
      * The Azure IServiceBus instance.
      *
-     * @var \AzureServiceBus\ServiceBus\Internal\IServiceBus
+     * @var \WindowsAzure\ServiceBus\Internal\IServiceBus
      */
     protected $azure;
 
     /**
      * The Azure ServiceBus job instance.
      *
-     * @var \AzureServiceBus\ServiceBus\Models\BrokeredMessage
+     * @var \WindowsAzure\ServiceBus\Models\BrokeredMessage
      */
     protected $job;
 
@@ -40,11 +40,11 @@ class AzureJob extends Job implements JobContract
      * Create a new job instance.
      *
      * @param \Illuminate\Container\Container                 $container
-     * @param \AzureServiceBus\ServiceBus\Internal\IServiceBus   $azure
-     * @param \AzureServiceBus\ServiceBus\Models\BrokeredMessage $job
+     * @param \WindowsAzure\ServiceBus\Internal\IServiceBus   $azure
+     * @param \WindowsAzure\ServiceBus\Models\BrokeredMessage $job
      * @param string                                          $queue
      *
-     * @return \Goavega\LaravelAzureServicebusTopic\AzureJob
+     * @return \Ju4nr3v0l\LaravelAzureServicebusTopic\AzureJob
      */
     public function __construct(Container $container, IServiceBus $azure, BrokeredMessage $job, $queue, string $rawMessage)
     {
@@ -110,7 +110,7 @@ class AzureJob extends Job implements JobContract
     /**
      * Get the underlying Azure client instance.
      *
-     * @return \AzureServiceBus\ServiceBus\Internal\IServiceBus
+     * @return \WindowsAzure\ServiceBus\Internal\IServiceBus
      */
 
     public function getAzure()
@@ -121,7 +121,7 @@ class AzureJob extends Job implements JobContract
     /**
      * Get the underlying raw Azure job.
      *
-     * @return \AzureServiceBus\ServiceBus\Models\BrokeredMessage
+     * @return \WindowsAzure\ServiceBus\Models\BrokeredMessage
      */
 
     public function getAzureJob()
