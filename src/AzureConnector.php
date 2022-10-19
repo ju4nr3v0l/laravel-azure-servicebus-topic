@@ -4,7 +4,7 @@ namespace Jadamavecool\LaravelAzureServicebus;
 use Illuminate\Queue\Connectors\ConnectorInterface;
 use WindowsAzure\Common\ServicesBuilder;
 
-class AzureConnector implements Illuminate\Queue\Connectors\ConnectorInterface
+class AzureConnector implements ConnectorInterface
 {
 
     /**
