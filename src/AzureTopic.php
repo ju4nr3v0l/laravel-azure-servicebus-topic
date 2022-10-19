@@ -1,5 +1,5 @@
 <?php
-namespace Ju4nr3v0l\LaravelAzureServicebus;
+namespace Jadamavecool\LaravelAzureServicebus;
 
 use WindowsAzure\ServiceBus\Models\BrokeredMessage;
 use WindowsAzure\ServiceBus\Models\ReceiveMessageOptions;

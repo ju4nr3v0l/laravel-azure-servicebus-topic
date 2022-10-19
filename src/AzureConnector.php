@@ -1,5 +1,5 @@
 <?php
-namespace Ju4nr3v0l\LaravelAzureServicebus;
+namespace Jadamavecool\LaravelAzureServicebus;
 
 use Illuminate\Queue\Connectors\ConnectorInterface;
 use WindowsAzure\Common\ServicesBuilder;

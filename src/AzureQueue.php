@@ -1,5 +1,5 @@
 <?php
-namespace Ju4nr3v0l\LaravelAzureServicebus;
+namespace Jadamavecool\LaravelAzureServicebus;
 
 class AzureQueue extends ServiceBus
 {

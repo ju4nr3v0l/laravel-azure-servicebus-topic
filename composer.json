@@ -1,5 +1,5 @@
 {
-    "name": "ju4nr3v0l/laravel-azure-servicebus",
+    "name": "jadamavecool/laravel-azure-servicebus",
     "description": "Extending the Laravel queue to support the Microsoft Azure Service Bus Queues & topics for php 7.4",
     "version": "8.0.0",
     "type": "library",
@@ -11,7 +11,7 @@
     ],
     "license": "MIT",
     "authors": [{
-        "name": "ju4nr3v0l",
+        "name": "jadamavecool",
         "email": "jadamavecool@gmail.com"
     }],
     "require": {
@@ -24,14 +24,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Ju4nr3v0l\\LaravelAzureServicebus\\": "src/"
+            "Jadamavecool\\LaravelAzureServicebus\\": "src/"
         }
     },
     "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
-                "Ju4nr3v0l\\LaravelAzureServicebus\\Support\\ServiceProvider"
+                "Jadamavecool\\LaravelAzureServicebus\\Support\\ServiceProvider"
             ]
         }
     }

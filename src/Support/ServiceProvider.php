@@ -1,7 +1,7 @@
 <?php
-namespace Ju4nr3v0l\LaravelAzureServicebus\Support;
+namespace Jadamavecool\LaravelAzureServicebus\Support;
 
-use Ju4nr3v0l\LaravelAzureServicebus\AzureConnector;
+use Jadamavecool\LaravelAzureServicebus\AzureConnector;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {

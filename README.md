@@ -3,20 +3,20 @@ Windows Azure Servicebus driver for Laravel
 ### Overview
 The library provides support for both Service Bus queues and topic based messaging (topics haven't been tested yet but should work). Default is Service Bus queues, for topic based messaging UseTopic should be set to true. The package should be auto discovered on Laravel > 5.6
 
-[![Latest Stable Version](https://poser.pugx.org/Ju4nr3v0l-software/laravel-azure-servicebus/v/stable)](https://packagist.org/packages/Ju4nr3v0l-software/laravel-azure-servicebus)
-[![Total Downloads](https://poser.pugx.org/Ju4nr3v0l-software/laravel-azure-servicebus/downloads)](https://packagist.org/packages/Ju4nr3v0l-software/laravel-azure-servicebus)
-[![License](https://poser.pugx.org/Ju4nr3v0l-software/laravel-azure-servicebus/license)](https://packagist.org/packages/Ju4nr3v0l-software/laravel-azure-servicebus)
+[![Latest Stable Version](https://poser.pugx.org/Jadamavecool-software/laravel-azure-servicebus/v/stable)](https://packagist.org/packages/Jadamavecool-software/laravel-azure-servicebus)
+[![Total Downloads](https://poser.pugx.org/Jadamavecool-software/laravel-azure-servicebus/downloads)](https://packagist.org/packages/Jadamavecool-software/laravel-azure-servicebus)
+[![License](https://poser.pugx.org/Jadamavecool-software/laravel-azure-servicebus/license)](https://packagist.org/packages/Jadamavecool-software/laravel-azure-servicebus)
 #### Installation
 
 Require this package in your `composer.json`:
 
-	"Ju4nr3v0l-software/laravel-azure-servicebus": "<<version>>"
+	"Jadamavecool-software/laravel-azure-servicebus": "<<version>>"
 
 Run composer update!
 
 After composer update is finished you need to add ServiceProvider to your `providers` array in `app/config/app.php` (this is only needed for laravel < 5.6):
 
-	'Ju4nr3v0l\LaravelAzureServicebusTopic\Support\Serviceprovider',
+	'Jadamavecool\LaravelAzureServicebusTopic\Support\Serviceprovider',
 
 add the following to the `connection` array in `app/config/queue.php`, and fill out your own connection data from the Azure Management portal:
 
@@ -67,7 +67,7 @@ composer.json
     }],
 "require: {
         ...
-        "Ju4nr3v0l-software/laravel-azure-servicebus": "dev-master"
+        "Jadamavecool-software/laravel-azure-servicebus": "dev-master"
 },
 
 ```
