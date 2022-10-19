@@ -44,7 +44,7 @@ class AzureJob extends Job implements JobContract
      * @param \WindowsAzure\ServiceBus\Models\BrokeredMessage $job
      * @param string                                          $queue
      *
-     * @return \Ju4nr3v0l\LaravelAzureServicebusTopic\AzureJob
+     * @return \Ju4nr3v0l\LaravelAzureServicebus\AzureTopic
      */
     public function __construct(Container $container, IServiceBus $azure, BrokeredMessage $job, $queue, string $rawMessage)
     {

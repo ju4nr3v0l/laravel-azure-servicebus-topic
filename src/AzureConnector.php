@@ -12,7 +12,7 @@ class AzureConnector implements ConnectorInterface
      *
      * @param array $config
      *
-     * @return \Illuminate\Queue\QueueInterface
+     * @return AzureTopic
      */
 
     public function connect(array $config)
